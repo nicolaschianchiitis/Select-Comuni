@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Select dinamici in cascata</title>
+    </head>
+    <body>
+        <center>
+            <h1>Select dinamici in cascata</h1>
+            Regione: <select name="regione" id="regione" onchange="loadProvince()">
+                <option value="none">--- Scegli una regione ---</option>
+            </select>
+            <br><br>
+            Provincia: <select name="provincia" id="provincia" onchange="loadComuni()"></select>
+            <br><br>
+            Comune: <select name="comune" id="comune"></select>
+            <br><br>
+            <button id="submit" onclick="submit()">Conferma scelta</button>
+            <button id="reset" onclick="reset()">Reset pagina</button>
+            <p id="log"></p>
+            <script src="js/main.js"></script>
+        </center>
+    </body>
+</html>
